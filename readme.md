@@ -1,7 +1,5 @@
 # Modern Carry Federation
 
-> *Ad Futurum*
-
 A modernized concealed-carry action pistol sport emphasizing practical skills, safety, and continuous improvement.
 
 ---
