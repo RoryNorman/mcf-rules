@@ -29,5 +29,3 @@ Small Capacity represents lower-capacity firearms, including micro-compact pisto
 - Loads chronographing at 200 power factor or higher will be scored as Major on the tablet; loads below 200 power factor are only permitted in this division when fired from a revolver
 
 There are no division-specific restrictions on magwells, ports, compensators, optics, sights, firearm weight, or other features. 
-
-Positive scoring hits in this division receive the adjustment defined in [Section 8.2](08-scoring.md#82-small-capacity-division).

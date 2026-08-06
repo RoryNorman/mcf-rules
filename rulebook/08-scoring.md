@@ -24,16 +24,6 @@ Hits touching a scoring line receive the higher scoring value. This also applies
 
 Steel targets may be falling plates or poppers. A plate must measure at least 6 inches across its smallest scoring dimension. If a hit fails to knock over a steel target, the hit will count when sufficient evidence establishes that the target was struck. Each steel target is worth 1 Alpha, regardless of division.
 
-## 8.3 Small Capacity Division
-
-The point value of each positive scoring hit is doubled. No-shoot penalties are not doubled. Doubling affects score value only; the competitor must still make every scoring hit required by the stage.
-
-Examples:
-
-- 1 Alpha = 10 points
-- 1 Charlie = 6 points
-- 1 Delta = 2 points
-
-## 8.4 Penalties
+## 8.3 Penalties
 
 Each occurrence of a penalty—including violating the written stage briefing, firing a shot while outside the shooting area, recording a miss, or hitting a no-shoot target—deducts 10 points. When a violation involves multiple shots or hits, the penalty applies separately to each applicable shot or hit.
