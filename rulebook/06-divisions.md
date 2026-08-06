@@ -25,6 +25,7 @@ There are no division-specific restrictions on magwells, ports, compensators, op
 Small Capacity represents lower-capacity firearms, including micro-compact pistols and revolvers.
 
 - Maximum magazine or cylinder capacity: 8 rounds + 1 initial barney
+- The firearm must meet at least one of the following: a minimum power factor of 200 (typically achieved with .45 ACP or 10mm Auto), or the firearm is a revolver
 - Loads chronographing at 200 power factor or higher will be scored as Major on the tablet; loads below 200 power factor are only permitted in this division when fired from a revolver
 
 There are no division-specific restrictions on magwells, ports, compensators, optics, sights, firearm weight, or other features. 
