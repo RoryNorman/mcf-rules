@@ -17,5 +17,5 @@ When equipment eligibility is uncertain, a match official may inspect the equipm
 
 ## 7.3 Holster and Bagged Carry
 
-Holsters and bagged carry are permitted, provided that they have some sort of cover within the pocket or bag over the trigger guard to prevent the trigger from being activated, and the firearm will never break the 180 while loaded and in the pocket/bag. All range rules apply, if the range disallows these carry methods, they cannot be used in the match. 
+Pocket and bagged carry are permitted, provided that they have some sort of cover within the pocket or bag over the trigger guard to prevent the trigger from being activated, and the firearm will never break the 180 while loaded and in the pocket/bag. All range rules apply, if the range disallows these carry methods, they cannot be used in the match. 
 
