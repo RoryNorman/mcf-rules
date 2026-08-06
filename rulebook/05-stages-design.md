@@ -37,3 +37,12 @@ Props, walls, fault lines, and start positions should guide competitors toward s
 Stages are freestyle unless the written stage briefing states otherwise. Competitors may determine the order in which they engage targets and the positions from which they engage them, subject to the shooting-area boundaries and safety rules.
 
 No more than one stage per match may require a fixed target-engagement order or fixed shooting positions. Any fixed order or position must be described clearly in the written stage briefing.
+
+
+### 5.1.5 Activated targets
+
+Activated targets must be repeatable and consistent. Competitors are not allowed to set up and practice activated targets in a course of fire, other than 1-2 brief demos at the begining of the squad walkthrough. 
+
+### 5.1.6 Construction failures
+
+Any prop or construction failure that can not be rectified to provide equity to all competitors will result in the stage being thrown out from scoring.

@@ -2,7 +2,6 @@
 
 Match officials are responsible for safe and equitable match operation. They may make corrections necessary to restore fairness or remove sources of inequity.
 
-All competitors are expected to help reset stages and assist with match flow. Match staff and competitors must act with integrity, honesty, respect, and courtesy.
 
 ## 10.1 Match Leadership
 
@@ -24,7 +23,7 @@ Competitors must:
 - Understand the written stage briefing before beginning a course of fire.
 - Handle firearms and ammunition in accordance with the safety rules.
 - Treat staff and other competitors with respect.
-- Assist with stage reset and match flow when able.
+- Assist with stage reset and match flow 
 
 ## 10.4 Consistency and Equity
 
