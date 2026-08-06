@@ -5,8 +5,13 @@
 1. Purpose and Identity
 2. Core Tenets
 3. Safety
-4. Course of Fire
-5. Scoring
+4. Range Commands
+5. Stage Design
+6. Divisions
+7. Equipment
+8. Scoring
+9. Disqualifications
+10. Match Administration
 
 ---
 
@@ -50,7 +55,7 @@ Advancements in carry equipment will be permitted by default unless such equipme
 
 MCF has a culture of safety first.
 
-Safety rules are non-negotiable (see Sections 3.0 and 7.0). The serious nature of concealed carry demands the highest standards of weapon handling.
+Safety rules are non-negotiable (see Chapters 3 and 9). The serious nature of concealed carry demands the highest standards of weapon handling.
 
 ## 2.2 Personal Growth
 
@@ -185,9 +190,9 @@ Assembled firearms inside the safety area must always be pointed in a safe direc
 
 ---
 
-# 4.0 Course of Fire
+# 4.0 Range Commands
 
-## 4.1 Range Commands
+## 4.1 Starting the Course of Fire
 
 The following commands shall be given when the competitor is in the designated start position.
 
@@ -224,9 +229,9 @@ Once the signal is given, the competitor may draw the firearm and engage targets
 
 ---
 
-# 5.0 Scoring
+# 8.0 Scoring
 
-## 5.1 Target Scoring
+## 8.1 Target Scoring
 
 Targets will consist of cardboard targets with three distinct scoring zones.
 
@@ -238,13 +243,13 @@ Targets will consist of cardboard targets with three distinct scoring zones.
 
 The Alpha zone may be divided into two smaller scoring areas.
 
-### Line Breaks
+### 8.1.1 Line Breaks
 
 Hits touching a scoring line receive the higher scoring value.
 
 This also applies to penalty targets.
 
-## 5.2 Small Capacity Division
+## 8.2 Small Capacity Division
 
 Positive scoring hits are doubled.
 
