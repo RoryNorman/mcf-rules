@@ -1,8 +1,8 @@
 # 7.0 Equipment
 
-MCF equipment rules are intended to accommodate practical concealed-carry firearms and supporting equipment without creating unnecessary feature-based divisions.
+MCF equipment rules are intended to accommodate practical concealed-carry setups without restrictive divisions.
 
-Competitors are responsible for ensuring that their equipment is safe, serviceable, and appropriate for use throughout the match. Equipment must be used in a manner consistent with the safety rules and the competitor's declared division.
+Competitors are responsible for ensuring that their equipment is safe, serviceable, and appropriate for use throughout the match.
 
 ## 7.1 Restrictions
 
@@ -10,11 +10,12 @@ Advancements in carry equipment are permitted by default unless the equipment pr
 
 The absence of a specific equipment rule should not be interpreted as a prohibition. Match officials should begin with the presumption that equipment is permitted and restrict it only when they can identify a safety concern or a clear conflict with the concealed-carry identity of the sport.
 
-Division capacity limits apply regardless of the physical capacity of the competitor's magazines or cylinder. Firearm features such as optics, sights, ports, compensators, magwells, size, and weight do not by themselves determine division placement.
-
 ## 7.2 Official Review
 
-When equipment eligibility is uncertain, a match official may inspect the equipment and explain the specific safety or concealment concern. Whenever practical, eligibility questions should be resolved before the competitor begins a course of fire.
+When equipment eligibility is uncertain, a match official may inspect the equipment and issue a subjective and authoritative decision. Match directors must be careful to strike a delicate balance between allowing real carry setups versus preventing unrealistic setups that violate the spirit of the sport. 
 
-An equipment decision should be applied consistently to similarly equipped competitors at the same match.
+
+## 7.3 Holster and Bagged Carry
+
+Holsters and bagged carry are permitted, provided that they have some sort of cover within the pocket or bag over the trigger guard to prevent the trigger from being activated, and the firearm will never break the 180 while loaded and in the pocket/bag. All range rules apply, if the range disallows these carry methods, they cannot be used in the match. 
 
