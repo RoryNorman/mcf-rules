@@ -39,10 +39,10 @@ Stages are freestyle unless the written stage briefing states otherwise. Competi
 No more than one stage per match may require a fixed target-engagement order or fixed shooting positions. Any fixed order or position must be described clearly in the written stage briefing.
 
 
-### 5.1.5 Activated targets
+### 5.1.6 Activated Targets
 
-Activated targets must be repeatable and consistent. Competitors are not allowed to set up and practice activated targets in a course of fire, other than 1-2 brief demos at the begining of the squad walkthrough. 
+Activated targets must operate repeatably and consistently. Competitors may not set up or practice activated targets during the course of fire. Match staff may provide one or two brief demonstrations at the beginning of the squad walkthrough.
 
-### 5.1.6 Construction failures
+### 5.1.7 Construction Failures
 
-Any prop or construction failure that can not be rectified to provide equity to all competitors will result in the stage being thrown out from scoring.
+If a prop or construction failure cannot be corrected in a way that provides an equitable experience for all competitors, the stage will be removed from match scoring.

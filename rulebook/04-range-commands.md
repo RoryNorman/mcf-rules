@@ -4,32 +4,32 @@ The following commands shall be given when the competitor is in the designated s
 
 ## 4.1 Make Ready
 
-Upon this command, and only this command, the competitor is authorized to draw their firearm, dry fire, practice reloads, take sight pictures, and load the firearm in preparation for the course of fire. This command begins the course of fire. Any action after this command, until the range is cleared, is considered within the course of fire. Holstering requires a primary external safety to be applied, if the firearm has one. 
+Upon this command, and only this command, the competitor is authorized to draw their firearm, dry fire, practice reloads, take sight pictures, and load the firearm in preparation for the course of fire. This command begins the course of fire. Any action after this command and before the "Range Is Clear" command is considered part of the course of fire. Before holstering, the competitor must engage the firearm's primary external safety, if it has one.
 
 ## 4.2 Are You Ready?
 
-At the completion of "Make Ready", and if the competitor is settled into the start position, the Range Officer will ask for confirmation (verbal, physical, etc) that the competitor is ready. Silence will be interpreted as confirmation. The competitor may be unloaded, and attempt the course later, if they are not ready. 
+After the competitor has completed the make-ready process and settled into the start position, the Range Officer will ask for verbal or physical confirmation that the competitor is ready. Silence will be interpreted as confirmation. If the competitor is not ready, they may indicate that to the Range Officer and be directed to unload before attempting the course later.
 
 ## 4.3 Standby
 
-Upon the "Are you ready" confirmation, if the competitor is motionless in the start position, the Range Officer will wait approximately 1–3 seconds, and give the start signal.
+After the "Are You Ready?" confirmation, and once the competitor is motionless in the start position, the Range Officer will wait approximately 1–3 seconds before giving the start signal.
 
 ## 4.4 Start Signal
 
-The start signal may be audible (timer beep) or visual (light). Once the signal is given, the competitor may draw the firearm and engage targets. Premature movement before the start signal will be stopped, and the competitor will be reset. 
+The start signal may be audible (timer beep) or visual (light). Once the signal is given, the competitor may draw the firearm and engage targets. If the competitor moves prematurely, the Range Officer will stop and reset them.
 
 ## 4.5 If You Are Finished, Unload, Show Clear
 
-When the competitor has concluded firing, the Range Officer will issue this command. The competitor may continue to engage targets, after which the Range Officer will repeat the command. When finished, the competitor will remove any loading devices from the firearm, and present the firearm's visibly unloaded action to the RO for inspection. The RO will verify it is unloaded, but the condition of the firearm is solely the shooter's responsibility. 
+When the competitor appears to have concluded firing, the Range Officer will issue this command. The competitor may continue to engage targets, after which the Range Officer will repeat the command. When finished, the competitor will remove all loading devices and present the firearm with its action visibly open for inspection. The Range Officer will visually verify the firearm's condition, but the competitor remains responsible for ensuring that it is unloaded.
 
 ## 4.6 If Clear, Hammer Down/Cylinder Closed, Holster
 
-When the RO has completed "Show Clear", they will issue this command. The firearm action must be closed while empty, and the trigger must be pulled to verify an empty chamber. The trigger must be pulled, decocking levers are not sufficient. Revolvers do not need to pull the trigger after showing an empty cylinder. The firearm will be holstered.
+After completing the inspection, the Range Officer will issue this command. For a semiautomatic firearm, the competitor must close the action on an empty chamber, point the firearm in a safe direction, pull the trigger, and holster. A decocking lever does not replace the required trigger pull. After showing an empty cylinder, a revolver competitor will close the cylinder and holster without pulling the trigger.
 
 ## 4.7 Range Is Clear
 
 Once the competitor's firearm is safely cleared and holstered, this command is given to end the course of fire and allow scoring to take place.
 
 ## 4.8 Stop
-At any point in the course of fire the RO determines there is a problem in construction, or a safety violation, they will call stop, and the competitior will freeze in place, keeping the firearm pointed in a safe direction. They will then be given the normal unload commands.
 
+If the Range Officer identifies a construction problem, safety violation, or other reason the course of fire cannot continue, they will command "Stop." The competitor must stop moving and shooting immediately, keep the firearm pointed in a safe direction, and await further commands. The Range Officer will then issue the normal unloading commands.

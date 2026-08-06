@@ -1,34 +1,33 @@
 # 9.0 Disqualifications
 
-A match disqualification (DQ) removes a competitor from further participation in the match. It is reserved for serious safety or behavioral violations. A stage DQ removes the score for the relevant stage from the competitors score, being marked as "Did Not Fire" or "DNF". DQs may be issued by any official match staff overseeing the course of fire. DQs will immediately result in an RO calling "Stop". All DQs must be confirmed by the rangemaster. Any DQ reversals will result in a reshoot. 
+A match disqualification (Match DQ) removes a competitor from further participation in the match and is reserved for serious safety or behavioral violations. A stage disqualification (Stage DQ) removes the competitor's score for the relevant stage, which will be recorded as "Did Not Fire" (DNF).
+
+Any match official overseeing the course of fire may issue a DQ. The Range Officer (RO) will immediately command "Stop," and the Range Master (RM) must confirm the DQ. If the RM reverses the DQ, the competitor will receive a reshoot.
 
 ## 9.1 Match Disqualifications
 
-Match DQs include the following items:
+Match DQs include:
 
-- Inserting ammunition into a firearm outside the course of fire
+- Inserting ammunition into a firearm outside the course of fire.
 - Walking around the range with a loaded firearm without proceeding immediately and directly to a match official for supervised unloading.
 - Unloading or removing a holstered firearm inside a vehicle on range property.
-- Handling a weapon outside an official safety area or under official instruction
-- Handling ammunition or ammunition containers inside a safety area (including snap caps and empty cases)
-- Breaking the 180 plane 
-- Dropping a loaded firearm
-- Pointing a firearm at any person, including the competitor (excluding the body below the wait on the draw and reholster)
-- Unsportsmanlike conduct
-- Intentional modification of stage construction
-- Impairment
+- Handling a firearm outside an official safety area without being under official instruction.
+- Handling ammunition or ammunition containers inside a safety area, including snap caps and empty cases.
+- Breaking the 180-degree safety plane.
+- Dropping a loaded firearm.
+- Pointing a firearm at any person, including the competitor. Incidental muzzle coverage of the competitor's body below the waist during the draw or reholster is excluded.
+- Unsportsmanlike conduct.
+- Intentionally modifying stage construction.
+- Participating while impaired.
 
 ## 9.2 Stage Disqualifications
 
-Stage DQs include the following items:
+Stage DQs include:
 
-- Dropping an unloaded firearm
-- Finger inside trigger guard outside of target engagement
-- Holstering a weapon without the primary safety mechanism engaged
-- Any intentional action the RM/MD determines to cause a dangerous situation 
-- Intentionally forcing a reshoot
-- Failing to help reset after an official warning
-- Triggering activated targets outside of the official demonstration 
-
-
-
+- Dropping an unloaded firearm.
+- Placing a finger inside the trigger guard outside of target engagement.
+- Holstering a firearm without engaging its primary safety mechanism, if it has one.
+- Intentionally taking an action that the Range Master or Match Director (MD) determines created a dangerous situation.
+- Intentionally causing a reshoot.
+- Failing to help reset stages after an official warning.
+- Triggering an activated target outside an official demonstration.

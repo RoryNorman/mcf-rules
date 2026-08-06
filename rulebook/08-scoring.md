@@ -2,14 +2,13 @@
 
 ## 8.1 Cardboard Target Scoring
 
-Targets consist of any style cardboard targets with three distinct scoring zones, called Alpha, Charlie, and Delta. The minimum dimensions are 10 inches in height and 6 inches in width.
+Cardboard targets may be any shape, but must contain three distinct scoring zones: Alpha, Charlie, and Delta. Each target must be at least 10 inches tall and 6 inches wide.
 
-Targets must have at least 4 square inches of A zone available to score. 
+At least 4 square inches of the Alpha zone must be available to score.
 
-Scoring Targets shall be a shade of brown. No shoots will be a shade of white. Hard cover will be a shade of black. 
+Scoring targets must be a shade of brown. No-shoot targets must be a shade of white. Hard cover must be a shade of black.
 
-The Alpha zone may be divided into separate scoring areas such as a torso and headbox.
-
+The Alpha zone may be divided into separate scoring areas, such as a torso and head box.
 
 | Zone | Value |
 | --- | ---: |
@@ -19,22 +18,22 @@ The Alpha zone may be divided into separate scoring areas such as a torso and he
 
 ### 8.1.1 Line Breaks
 
-Hits touching a scoring line receive the higher scoring value. This also applies to penalty targets.
+Hits touching a scoring line receive the higher scoring value. This also applies to no-shoot targets.
 
 ## 8.2 Steel Target Scoring
 
-Steel targets can be of the falling plate, or popper type. Plates must be at least 6 inches in diameter/height/width. Any hits that fail to knock over a steel target will be evaluated as scoring, if sufficent evidence of a hit can be established. All steel is worth 1 Alpha, regardless of division.
+Steel targets may be falling plates or poppers. A plate must measure at least 6 inches across its smallest scoring dimension. If a hit fails to knock over a steel target, the hit will count when sufficient evidence establishes that the target was struck. Each steel target is worth 1 Alpha, regardless of division.
 
 ## 8.3 Small Capacity Division
 
-Ppositive scoring hits are doubled. No shoots are not doubled. The doubled hit count must still be aqequate 
+The point value of each positive scoring hit is doubled. No-shoot penalties are not doubled. Doubling affects score value only; the competitor must still make every scoring hit required by the stage.
 
 Examples:
 
-- 1 Alpha = 2 Alpha
-- 1 Charlie = 2 Charlie
-- 1 Delta = 2 Delta
+- 1 Alpha = 10 points
+- 1 Charlie = 6 points
+- 1 Delta = 2 points
 
 ## 8.4 Penalties
 
-Any penalty, such as violating the stage briefing, shots taken while standing outside the shooting area, misses, or hitting no shoots, will incur 10 point penalty and be added on a per shot basis. 
+Each occurrence of a penalty—including violating the written stage briefing, firing a shot while outside the shooting area, recording a miss, or hitting a no-shoot target—deducts 10 points. When a violation involves multiple shots or hits, the penalty applies separately to each applicable shot or hit.

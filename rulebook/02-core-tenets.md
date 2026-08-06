@@ -4,7 +4,7 @@
 
 MCF has a culture of safety first.
 
-Safety rules are non-negotiable. The serious nature of concealed carry demands the highest standards of weapon handling.
+Safety rules are non-negotiable. The serious nature of concealed carry demands the highest standards of firearm handling.
 
 ## 2.2 Personal Growth
 

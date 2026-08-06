@@ -23,7 +23,7 @@ Competitors must:
 - Understand the written stage briefing before beginning a course of fire.
 - Handle firearms and ammunition in accordance with the safety rules.
 - Treat staff and other competitors with respect.
-- Assist with stage reset and match flow 
+- Assist with stage reset and match flow.
 
 ## 10.4 Consistency and Equity
 
