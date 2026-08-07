@@ -28,4 +28,4 @@ Small Capacity represents lower-capacity firearms, including micro-compact pisto
 
 There are no division-specific restrictions on magwells, ports, compensators, optics, sights, firearm weight, or other features. 
 
-Positive scoring hits in this division receive the adjustment defined in [Section 8.2](08-scoring.md#82-small-capacity-division).
+Positive scoring hits in this division receive the adjustment defined in [Section 8.3](08-scoring.md#83-small-capacity-division).
