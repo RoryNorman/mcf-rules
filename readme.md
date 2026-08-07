@@ -32,18 +32,3 @@ reward speed and accuracy without unnecessary theatrics.
   a browser or publish as a page.
 - [WordPress HTML](output/html/mcf-rulebook-wordpress.html) — ready to paste into
   a WordPress Custom HTML block.
-
-## Making Changes
-
-The Markdown chapters under [`rulebook/`](rulebook/) are the source of truth.
-Edit those files rather than the generated HTML or PDF outputs.
-
-The repository includes builders for regenerating both published formats:
-
-```shell
-python scripts/build_rulebook_html.py
-python scripts/build_rulebook.py
-```
-
-See the [builder documentation](scripts/README.md) for requirements, WordPress
-instructions, and custom output options.
