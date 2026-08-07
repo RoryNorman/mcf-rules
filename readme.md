@@ -1,5 +1,7 @@
 # Modern Carry Federation
 
+![Modern Carry Federation logo](assets/mcf-logo.png)
+
 A modernized concealed-carry action pistol sport emphasizing practical skills, safety, and continuous improvement.
 
 ---
@@ -7,14 +9,14 @@ A modernized concealed-carry action pistol sport emphasizing practical skills, s
 ## Rulebook
 
 1. [Purpose and Identity](rulebook/01-purpose.md)
-2. [Core Tenets](rulebook/02-core-tenets.md)
+2. [Core Tenets](rulebook/02-tenets.md)
 3. [Safety](rulebook/03-safety.md)
-4. [Range Commands](rulebook/04-range-commands.md)
-5. [Stage Design](rulebook/05-stages-design.md)
+4. [Range Commands](rulebook/04-commands.md)
+5. [Stage Design](rulebook/05-stages.md)
 6. [Divisions](rulebook/06-divisions.md)
 7. [Equipment](rulebook/07-equipment.md)
 8. [Scoring](rulebook/08-scoring.md)
-9. [Disqualifications](rulebook/09-penalties.md)
-10. [Match Administration](rulebook/10-match-administration.md)
+9. [Disqualifications](rulebook/09-dq.md)
+10. [Match Administration](rulebook/10-admin.md)
 
 **Appendix:** [Glossary and Examples](rulebook/appendix.md)

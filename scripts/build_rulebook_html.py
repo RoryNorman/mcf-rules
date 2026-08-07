@@ -6,25 +6,30 @@ from __future__ import annotations
 import argparse
 import html
 import re
+import shutil
 from pathlib import Path
 
 REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_OUTPUT_DIR = REPOSITORY_ROOT / "output" / "html"
+LOGO_SOURCE = REPOSITORY_ROOT / "assets" / "mcf-logo.png"
+WORDPRESS_LOGO_URL = (
+    "https://raw.githubusercontent.com/RoryNorman/mcf-rules/main/assets/mcf-logo.png"
+)
 SOURCE_FILES = (
     "rulebook/01-purpose.md",
-    "rulebook/02-core-tenets.md",
+    "rulebook/02-tenets.md",
     "rulebook/03-safety.md",
-    "rulebook/04-range-commands.md",
-    "rulebook/05-stages-design.md",
+    "rulebook/04-commands.md",
+    "rulebook/05-stages.md",
     "rulebook/06-divisions.md",
     "rulebook/07-equipment.md",
     "rulebook/08-scoring.md",
-    "rulebook/09-penalties.md",
-    "rulebook/10-match-administration.md",
+    "rulebook/09-dq.md",
+    "rulebook/10-admin.md",
     "rulebook/appendix.md",
 )
 
-CSS = """.mcf-rulebook{--mcf-ink:#20252b;--mcf-muted:#5a6068;--mcf-line:#d8dde2;--mcf-accent:#a3262a;box-sizing:border-box;max-width:900px;margin:0 auto;color:var(--mcf-ink);font:17px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.mcf-rulebook *{box-sizing:border-box}.mcf-rulebook header{text-align:center;padding:2.5rem 1rem;border-bottom:3px solid var(--mcf-accent)}.mcf-rulebook header h1{margin:0;font-size:clamp(2rem,6vw,3.4rem);line-height:1.1}.mcf-rulebook .mcf-tagline{margin:.65rem 0 0;color:var(--mcf-muted);font-style:italic}.mcf-rulebook nav{margin:2rem 0;padding:1.25rem 1.5rem;background:#f5f6f7;border:1px solid var(--mcf-line);border-radius:8px}.mcf-rulebook nav h2{margin-top:0}.mcf-rulebook nav ol{columns:2;column-gap:2rem;margin-bottom:0}.mcf-rulebook nav li{break-inside:avoid;margin:.25rem 0}.mcf-rulebook a{color:var(--mcf-accent);text-decoration-thickness:1px;text-underline-offset:2px}.mcf-rulebook section{scroll-margin-top:2rem}.mcf-rulebook section>h2{margin-top:3.25rem;padding-bottom:.4rem;border-bottom:2px solid var(--mcf-line);font-size:2rem;line-height:1.2}.mcf-rulebook h3{margin-top:2rem;font-size:1.4rem;line-height:1.3}.mcf-rulebook h4{margin-top:1.5rem;font-size:1.12rem}.mcf-rulebook blockquote{margin:1.5rem 0;padding:.75rem 1.25rem;border-left:4px solid var(--mcf-accent);background:#f8f8f8;color:var(--mcf-muted)}.mcf-rulebook table{width:100%;margin:1.5rem 0;border-collapse:collapse}.mcf-rulebook th,.mcf-rulebook td{padding:.65rem .8rem;border:1px solid var(--mcf-line);text-align:left}.mcf-rulebook th{background:#eef0f2}.mcf-rulebook ul{padding-left:1.4rem}.mcf-rulebook footer{margin-top:4rem;padding:1.5rem 0;border-top:1px solid var(--mcf-line);color:var(--mcf-muted);font-size:.9rem}@media(max-width:650px){.mcf-rulebook{font-size:16px}.mcf-rulebook nav ol{columns:1}.mcf-rulebook section>h2{font-size:1.65rem}}@media print{.mcf-rulebook nav{break-after:page}.mcf-rulebook section>h2{break-before:page}.mcf-rulebook a{color:inherit;text-decoration:none}}"""
+CSS = """.mcf-rulebook{--mcf-ink:#20252b;--mcf-muted:#5a6068;--mcf-line:#d8dde2;--mcf-accent:#f05223;box-sizing:border-box;max-width:900px;margin:0 auto;color:var(--mcf-ink);font:17px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.mcf-rulebook *{box-sizing:border-box}.mcf-rulebook header{text-align:center;padding:2.5rem 1rem;border-bottom:3px solid var(--mcf-accent)}.mcf-rulebook .mcf-logo{display:block;width:min(100%,800px);height:auto;margin:0 auto 1.25rem}.mcf-rulebook header h1{margin:0;font-size:clamp(2rem,6vw,3.4rem);line-height:1.1}.mcf-rulebook nav{margin:2rem 0;padding:1.25rem 1.5rem;background:#f5f6f7;border:1px solid var(--mcf-line);border-radius:8px}.mcf-rulebook nav h2{margin-top:0}.mcf-rulebook nav ol{columns:2;column-gap:2rem;margin-bottom:0}.mcf-rulebook nav li{break-inside:avoid;margin:.25rem 0}.mcf-rulebook a{color:var(--mcf-accent);text-decoration-thickness:1px;text-underline-offset:2px}.mcf-rulebook section{scroll-margin-top:2rem}.mcf-rulebook section>h2{margin-top:3.25rem;padding-bottom:.4rem;border-bottom:2px solid var(--mcf-line);font-size:2rem;line-height:1.2}.mcf-rulebook h3{margin-top:2rem;font-size:1.4rem;line-height:1.3}.mcf-rulebook h4{margin:1.5rem 0 0 1rem;padding-left:.75rem;border-left:3px solid var(--mcf-line);font-size:1.12rem}.mcf-rulebook blockquote{margin:1.5rem 0;padding:.75rem 1.25rem;border-left:4px solid var(--mcf-accent);background:#f8f8f8;color:var(--mcf-muted)}.mcf-rulebook table{width:100%;margin:1.5rem 0;border-collapse:collapse}.mcf-rulebook th,.mcf-rulebook td{padding:.65rem .8rem;border:1px solid var(--mcf-line);text-align:left}.mcf-rulebook th{background:#eef0f2}.mcf-rulebook ul{padding-left:1.4rem}.mcf-rulebook footer{margin-top:4rem;padding:1.5rem 0;border-top:1px solid var(--mcf-line);color:var(--mcf-muted);font-size:.9rem}@media(max-width:650px){.mcf-rulebook{font-size:16px}.mcf-rulebook nav ol{columns:1}.mcf-rulebook section>h2{font-size:1.65rem}}@media print{.mcf-rulebook nav{break-after:page}.mcf-rulebook section>h2{break-before:page}.mcf-rulebook a{color:inherit;text-decoration:none}}"""
 
 
 def slugify(value: str) -> str:
@@ -155,6 +160,11 @@ def markdown_to_html(
 
 
 def build(output_dir: Path) -> None:
+    if not LOGO_SOURCE.is_file():
+        raise SystemExit(
+            f"Missing rulebook logo: {LOGO_SOURCE.relative_to(REPOSITORY_ROOT)}"
+        )
+
     chapters: list[str] = []
     toc: list[tuple[str, str]] = []
     for relative in SOURCE_FILES:
@@ -180,17 +190,24 @@ def build(output_dir: Path) -> None:
         )
         + "</ol></nav>"
     )
-    article = "\n".join(
-        (
-            '<article class="mcf-rulebook">',
-            '<header><h1>Modern Carry Federation Rulebook</h1><p class="mcf-tagline">Ad Futurum</p></header>',
-            navigation,
-            *chapters,
-            "<footer>Modern Carry Federation</footer>",
-            "</article>",
+
+    def make_article(logo_url: str) -> str:
+        return "\n".join(
+            (
+                '<article class="mcf-rulebook">',
+                '<header><img class="mcf-logo" '
+                f'src="{logo_url}" alt="Modern Carry Federation">'
+                "<h1>Rulebook</h1></header>",
+                navigation,
+                *chapters,
+                "<footer>Modern Carry Federation</footer>",
+                "</article>",
+            )
         )
-    )
-    fragment = f"<style>\n{CSS}\n</style>\n{article}\n"
+
+    standalone_article = make_article("assets/mcf-logo.png")
+    wordpress_article = make_article(WORDPRESS_LOGO_URL)
+    fragment = f"<style>\n{CSS}\n</style>\n{wordpress_article}\n"
     document = "\n".join(
         (
             "<!doctype html>",
@@ -198,10 +215,13 @@ def build(output_dir: Path) -> None:
             '<meta name="viewport" content="width=device-width,initial-scale=1">',
             "<title>Modern Carry Federation Rulebook</title>",
             f"<style>{CSS}</style>",
-            f"</head><body>{article}</body></html>\n",
+            f"</head><body>{standalone_article}</body></html>\n",
         )
     )
     output_dir.mkdir(parents=True, exist_ok=True)
+    asset_output = output_dir / "assets"
+    asset_output.mkdir(exist_ok=True)
+    shutil.copy2(LOGO_SOURCE, asset_output / LOGO_SOURCE.name)
     (output_dir / "mcf-rulebook.html").write_text(document, encoding="utf-8")
     (output_dir / "mcf-rulebook-wordpress.html").write_text(fragment, encoding="utf-8")
     print(f"Created HTML rulebook files in {output_dir}")

@@ -10,19 +10,19 @@ Match leadership may correct or remove a stage condition that creates an unsafe 
 
 ## 10.2 Range Officers
 
-The Range Officer (RO) wil supervise competitors during each course of fire, issue the prescribed range commands, and maintain control of the shooting area. They are responsible for stopping a course of fire when they observe a safety problem, construction failure, or other condition that prevents the stage from continuing properly. Any ruling by a range officer may be escalated to another RO, and then finally to the Rangemaster.
+The Range Officer (RO) will supervise competitors during each course of fire, issue the prescribed range commands, and maintain control of the shooting area. They are responsible for stopping a course of fire when they observe a safety problem, construction failure, or other condition that prevents the stage from continuing properly. Any ruling by a range officer may be escalated to another RO, and then finally to the Rangemaster.
 
 ## 10.3 Rangemaster
 
-The Range Master (RM) handles the operations around shooting at the match. The RM is the highest level for RO escalation. They have the final authority on safety and scoring calls. Any other other disputes may go to arbitration.
+The Range Master (RM) handles the operations around shooting at the match. The RM is the highest level for RO escalation. They have the final authority on safety and scoring calls. Any other disputes may go to arbitration.
 
 ## 10.4 Match Director
 
-The Match Director is equal to the RM in authority, but handles the administration of the match versus the management of shooting. There is some crossover between the RM and MD, and they can substitute for each other as need, or be combined at smaller matches.
+The Match Director is equal to the RM in authority, but handles the administration of the match versus the management of shooting. There is some crossover between the RM and MD, and they can substitute for each other as needed, or be combined at smaller matches.
 
 ## 10.5 Arbitration
 
-If the competitor disagrees with something other than a scoring call, they supply $100 dollars to the MD, and present their case to a committee of 3 shooters pulled from a separate, uninvolved squad. If the competitor loses arbitration, the 100 dollars is forfeit to the match. If they win, the fee is returned and a scoring modification/reshoot granted as needed.
+If the competitor disagrees with something other than a scoring call, they supply $100 to the MD and present their case to a committee of 3 shooters pulled from a separate, uninvolved squad. If the competitor loses arbitration, the $100 is forfeited to the match. If they win, the fee is returned and a scoring modification or reshoot is granted as needed.
 
 ## 10.6 Competitor Responsibilities
 

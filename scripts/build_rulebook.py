@@ -24,10 +24,12 @@ try:
     from reportlab.lib.pagesizes import LETTER
     from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
     from reportlab.lib.units import inch
+    from reportlab.lib.utils import ImageReader
     from reportlab.platypus import (
         BaseDocTemplate,
         Frame,
         HRFlowable,
+        Image,
         ListFlowable,
         ListItem,
         NextPageTemplate,
@@ -48,17 +50,18 @@ except ImportError as exc:
 
 REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_OUTPUT = REPOSITORY_ROOT / "output" / "pdf" / "mcf-rulebook.pdf"
+LOGO_SOURCE = REPOSITORY_ROOT / "assets" / "mcf-logo.png"
 SOURCE_FILES = (
     "rulebook/01-purpose.md",
-    "rulebook/02-core-tenets.md",
+    "rulebook/02-tenets.md",
     "rulebook/03-safety.md",
-    "rulebook/04-range-commands.md",
-    "rulebook/05-stages-design.md",
+    "rulebook/04-commands.md",
+    "rulebook/05-stages.md",
     "rulebook/06-divisions.md",
     "rulebook/07-equipment.md",
     "rulebook/08-scoring.md",
-    "rulebook/09-penalties.md",
-    "rulebook/10-match-administration.md",
+    "rulebook/09-dq.md",
+    "rulebook/10-admin.md",
     "rulebook/appendix.md",
 )
 
@@ -184,6 +187,7 @@ def make_styles() -> dict[str, ParagraphStyle]:
             fontSize=11.5,
             leading=15,
             textColor=colors.HexColor("#343B44"),
+            leftIndent=14,
             spaceBefore=11,
             spaceAfter=5,
             keepWithNext=True,
@@ -392,12 +396,24 @@ def existing_sources() -> Iterable[Path]:
 
 
 def build_pdf(output_path: Path) -> None:
+    if not LOGO_SOURCE.is_file():
+        raise SystemExit(
+            f"Missing rulebook logo: {LOGO_SOURCE.relative_to(REPOSITORY_ROOT)}"
+        )
     output_path.parent.mkdir(parents=True, exist_ok=True)
     styles = make_styles()
+    logo_width, logo_height = ImageReader(LOGO_SOURCE).getSize()
+    rendered_logo_width = 6.4 * inch
+    rendered_logo_height = rendered_logo_width * logo_height / logo_width
     story: list[object] = [
-        Spacer(1, 2.1 * inch),
+        Spacer(1, 0.85 * inch),
+        Image(
+            str(LOGO_SOURCE),
+            width=rendered_logo_width,
+            height=rendered_logo_height,
+        ),
+        Spacer(1, 0.5 * inch),
         Paragraph("Modern Carry Federation Rulebook", styles["title"]),
-        Paragraph("<i>Ad Futurum</i>", styles["subtitle"]),
         Spacer(1, 2.5 * inch),
         Paragraph("Modern Carry Federation", styles["subtitle"]),
         NextPageTemplate("body"),

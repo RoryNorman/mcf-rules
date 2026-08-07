@@ -5,6 +5,7 @@ on:
     branches: [main, master]
     paths:
       - "rulebook/**"
+      - "assets/mcf-logo.png"
       - "scripts/build_rulebook_html.py"
       - ".github/workflows/build-html-rulebook.yml"
   workflow_dispatch:
@@ -31,6 +32,6 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: mcf-html-rulebook
-          path: output/html/*.html
+          path: output/html/**
           if-no-files-found: error
           retention-days: 90

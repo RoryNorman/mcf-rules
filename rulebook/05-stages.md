@@ -28,7 +28,7 @@ Stage designers and match officials must identify and correct unsafe engagement 
 
 Targets must not be available for engagement beyond the 180-degree safety line. Steel targets must not be placed where they can be engaged from within 21 feet.
 
-Props, walls, fault lines, and start positions should guide competitors toward safe firearm handling without requiring a single prescribed solution unless the stage specifically permits one under Section 5.1.5.
+Props, walls, fault lines, and start positions should guide competitors toward safe firearm handling without requiring a single prescribed solution unless the stage specifically permits one under [Section 5.1.5](#515-freestyle).
 
 ### 5.1.5 Freestyle
 
