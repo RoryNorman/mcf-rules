@@ -12,7 +12,6 @@ Outside the course of fire, firearms must be clear of magazines, moon clips, and
 
 Anyone not meeting these conditions will be escorted to a safety area to correct the issue. If ammunition is inserted into the firearm in any way, the competitor will be disqualified.
 
-
 ### 3.1.2 Arrival With a Loaded Firearm
 
 A competitor who arrives with a loaded firearm will not receive a DQ provided they proceed immediately and directly to the nearest match official and unload under supervision in a shooting area.

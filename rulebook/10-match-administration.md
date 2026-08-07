@@ -2,16 +2,15 @@
 
 Match officials are responsible for safe and equitable match operation. They may make corrections necessary to restore fairness or remove sources of inequity.
 
-
 ## 10.1 Match Leadership
 
 Match leadership is responsible for organizing the match, assigning officials, and ensuring that stages can be administered under these rules. Safety concerns take priority over schedule, scoring, and competitive considerations.
 
-Match leadership may correct or remove a stage condition that creates an unsafe or inequitable experience. 
+Match leadership may correct or remove a stage condition that creates an unsafe or inequitable experience.
 
 ## 10.2 Range Officers
 
-The Range Officer (RO) wil supervise competitors during each course of fire, issue the prescribed range commands, and maintain control of the shooting area. They are responsible for stopping a course of fire when they observe a safety problem, construction failure, or other condition that prevents the stage from continuing properly. Any ruling by a range officer may be escalated to another RO, and then finally to the Rangemaster. 
+The Range Officer (RO) wil supervise competitors during each course of fire, issue the prescribed range commands, and maintain control of the shooting area. They are responsible for stopping a course of fire when they observe a safety problem, construction failure, or other condition that prevents the stage from continuing properly. Any ruling by a range officer may be escalated to another RO, and then finally to the Rangemaster.
 
 ## 10.3 Rangemaster
 
@@ -23,7 +22,7 @@ The Match Director is equal to the RM in authority, but handles the administrati
 
 ## 10.5 Arbitration
 
-If the competitor disagrees with something other than a scoring call, they supply $100 dollars to the MD, and present their case to a committee of 3 shooters pulled from a separate, uninvolved squad. If the competitor loses arbitration, the 100 dollars is forfeit to the match. If they win, the fee is returned and a scoring modification/reshoot granted as needed. 
+If the competitor disagrees with something other than a scoring call, they supply $100 dollars to the MD, and present their case to a committee of 3 shooters pulled from a separate, uninvolved squad. If the competitor loses arbitration, the 100 dollars is forfeit to the match. If they win, the fee is returned and a scoring modification/reshoot granted as needed.
 
 ## 10.6 Competitor Responsibilities
 

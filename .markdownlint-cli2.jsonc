@@ -1,0 +1,6 @@
+{
+  "config": {
+    // Rulebook prose is intentionally stored as one sentence per source line.
+    "MD013": false
+  }
+}

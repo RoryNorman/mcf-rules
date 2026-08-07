@@ -10,7 +10,6 @@ Stages will require a minimum of 4 scoring hits and may require no more than 32 
 
 The required round count is based on scoring hits, not the number of shots a competitor actually fires. Competitors may fire additional shots unless the written stage briefing states otherwise.
 
-
 ### 5.1.2 Vision Barriers
 
 Stages may use walls, barrels, and other objects as impenetrable vision barriers. Unless otherwise stated, objects over 5 feet tall extend upward as an infinite plane and cannot be shot over or through.
@@ -31,13 +30,11 @@ Targets must not be available for engagement beyond the 180-degree safety line. 
 
 Props, walls, fault lines, and start positions should guide competitors toward safe firearm handling without requiring a single prescribed solution unless the stage specifically permits one under Section 5.1.5.
 
-
 ### 5.1.5 Freestyle
 
 Stages are freestyle unless the written stage briefing states otherwise. Competitors may determine the order in which they engage targets and the positions from which they engage them, subject to the shooting-area boundaries and safety rules.
 
 No more than one stage per match may require a fixed target-engagement order or fixed shooting positions. Any fixed order or position must be described clearly in the written stage briefing.
-
 
 ### 5.1.6 Activated Targets
 

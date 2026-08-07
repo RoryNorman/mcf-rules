@@ -8,7 +8,6 @@ import html
 import re
 from pathlib import Path
 
-
 REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_OUTPUT_DIR = REPOSITORY_ROOT / "output" / "html"
 SOURCE_FILES = (
@@ -46,14 +45,18 @@ def inline_markup(value: str, source: Path) -> str:
         label, target = match.groups()
         if target.endswith(".md") or ".md#" in target:
             filename, _, fragment = target.partition("#")
-            destination = slugify(fragment) if fragment else slugify(filename.removesuffix(".md"))
+            destination = (
+                slugify(fragment) if fragment else slugify(filename.removesuffix(".md"))
+            )
             target = f"#{destination}"
         return f'<a href="{html.escape(target, quote=True)}">{label}</a>'
 
     return re.sub(r"\[([^]]+)]\(([^)]+)\)", link, value)
 
 
-def markdown_to_html(markdown: str, source: Path) -> tuple[str, list[tuple[int, str, str]]]:
+def markdown_to_html(
+    markdown: str, source: Path
+) -> tuple[str, list[tuple[int, str, str]]]:
     output: list[str] = []
     headings: list[tuple[int, str, str]] = []
     paragraph: list[str] = []
@@ -67,7 +70,13 @@ def markdown_to_html(markdown: str, source: Path) -> tuple[str, list[tuple[int, 
 
     def flush_list() -> None:
         if list_items:
-            output.append("<ul>" + "".join(f"<li>{inline_markup(item, source)}</li>" for item in list_items) + "</ul>")
+            output.append(
+                "<ul>"
+                + "".join(
+                    f"<li>{inline_markup(item, source)}</li>" for item in list_items
+                )
+                + "</ul>"
+            )
             list_items.clear()
 
     def flush_table() -> None:
@@ -75,41 +84,73 @@ def markdown_to_html(markdown: str, source: Path) -> tuple[str, list[tuple[int, 
             return
         rows = table_rows[:]
         table_rows.clear()
-        separator = len(rows) > 1 and all(re.fullmatch(r":?-{3,}:?", cell) for cell in rows[1])
+        separator = len(rows) > 1 and all(
+            re.fullmatch(r":?-{3,}:?", cell) for cell in rows[1]
+        )
         if separator:
             del rows[1]
         head = rows.pop(0)
-        output.append("<table><thead><tr>" + "".join(f"<th>{inline_markup(cell, source)}</th>" for cell in head) + "</tr></thead>")
+        output.append(
+            "<table><thead><tr>"
+            + "".join(f"<th>{inline_markup(cell, source)}</th>" for cell in head)
+            + "</tr></thead>"
+        )
         if rows:
-            output.append("<tbody>" + "".join("<tr>" + "".join(f"<td>{inline_markup(cell, source)}</td>" for cell in row) + "</tr>" for row in rows) + "</tbody>")
+            output.append(
+                "<tbody>"
+                + "".join(
+                    "<tr>"
+                    + "".join(f"<td>{inline_markup(cell, source)}</td>" for cell in row)
+                    + "</tr>"
+                    for row in rows
+                )
+                + "</tbody>"
+            )
         output.append("</table>")
 
     for raw_line in markdown.splitlines():
         line = raw_line.rstrip()
         heading = re.match(r"^(#{1,3})\s+(.+)$", line)
         if heading:
-            flush_paragraph(); flush_list(); flush_table()
+            flush_paragraph()
+            flush_list()
+            flush_table()
             level = len(heading.group(1)) + 1
             title = heading.group(2).strip()
             anchor = slugify(title)
             headings.append((level, title, anchor))
-            output.append(f'<h{level} id="{anchor}">{inline_markup(title, source)}</h{level}>')
+            output.append(
+                f'<h{level} id="{anchor}">{inline_markup(title, source)}</h{level}>'
+            )
         elif line.startswith("|") and line.endswith("|"):
-            flush_paragraph(); flush_list()
+            flush_paragraph()
+            flush_list()
             table_rows.append([cell.strip() for cell in line.strip("|").split("|")])
         elif line.startswith("- "):
-            flush_paragraph(); flush_table()
+            flush_paragraph()
+            flush_table()
             list_items.append(line[2:].strip())
         elif line.startswith("> "):
-            flush_paragraph(); flush_list(); flush_table()
+            flush_paragraph()
+            flush_list()
+            flush_table()
             output.append(f"<blockquote>{inline_markup(line[2:], source)}</blockquote>")
         elif not line.strip():
-            flush_paragraph(); flush_list(); flush_table()
+            flush_paragraph()
+            flush_list()
+            flush_table()
         elif line.strip() in {"---", "***"}:
-            flush_paragraph(); flush_list(); flush_table(); output.append("<hr>")
+            flush_paragraph()
+            flush_list()
+            flush_table()
+            output.append("<hr>")
         else:
-            flush_list(); flush_table(); paragraph.append(line.strip())
-    flush_paragraph(); flush_list(); flush_table()
+            flush_list()
+            flush_table()
+            paragraph.append(line.strip())
+    flush_paragraph()
+    flush_list()
+    flush_table()
     return "\n".join(output), headings
 
 
@@ -127,26 +168,39 @@ def build(output_dir: Path) -> None:
         if first_level != 2:
             raise SystemExit(f"Expected a level-one heading in {relative}")
         toc.append((first_title, first_anchor))
-        chapters.append(f'<section aria-labelledby="{first_anchor}">{chapter}</section>')
+        chapters.append(
+            f'<section aria-labelledby="{first_anchor}">{chapter}</section>'
+        )
 
-    navigation = "<nav aria-label=\"Rulebook contents\"><h2>Contents</h2><ol>" + "".join(
-        f'<li><a href="#{anchor}">{html.escape(title)}</a></li>' for title, anchor in toc
-    ) + "</ol></nav>"
-    article = "\n".join((
-        '<article class="mcf-rulebook">',
-        '<header><h1>Modern Carry Federation Rulebook</h1><p class="mcf-tagline">Ad Futurum</p></header>',
-        navigation,
-        *chapters,
-        '<footer>Modern Carry Federation</footer>',
-        "</article>",
-    ))
+    navigation = (
+        '<nav aria-label="Rulebook contents"><h2>Contents</h2><ol>'
+        + "".join(
+            f'<li><a href="#{anchor}">{html.escape(title)}</a></li>'
+            for title, anchor in toc
+        )
+        + "</ol></nav>"
+    )
+    article = "\n".join(
+        (
+            '<article class="mcf-rulebook">',
+            '<header><h1>Modern Carry Federation Rulebook</h1><p class="mcf-tagline">Ad Futurum</p></header>',
+            navigation,
+            *chapters,
+            "<footer>Modern Carry Federation</footer>",
+            "</article>",
+        )
+    )
     fragment = f"<style>\n{CSS}\n</style>\n{article}\n"
-    document = "\n".join((
-        "<!doctype html>", '<html lang="en"><head><meta charset="utf-8">',
-        '<meta name="viewport" content="width=device-width,initial-scale=1">',
-        "<title>Modern Carry Federation Rulebook</title>", f"<style>{CSS}</style>",
-        f"</head><body>{article}</body></html>\n",
-    ))
+    document = "\n".join(
+        (
+            "<!doctype html>",
+            '<html lang="en"><head><meta charset="utf-8">',
+            '<meta name="viewport" content="width=device-width,initial-scale=1">',
+            "<title>Modern Carry Federation Rulebook</title>",
+            f"<style>{CSS}</style>",
+            f"</head><body>{article}</body></html>\n",
+        )
+    )
     output_dir.mkdir(parents=True, exist_ok=True)
     (output_dir / "mcf-rulebook.html").write_text(document, encoding="utf-8")
     (output_dir / "mcf-rulebook-wordpress.html").write_text(fragment, encoding="utf-8")

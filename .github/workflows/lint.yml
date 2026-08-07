@@ -1,0 +1,39 @@
+name: Lint
+
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - "**/*.md"
+      - "**/*.py"
+      - ".markdownlint-cli2.jsonc"
+      - ".github/workflows/*.yml"
+  pull_request:
+    paths:
+      - "**/*.md"
+      - "**/*.py"
+      - ".markdownlint-cli2.jsonc"
+      - ".github/workflows/*.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Lint Python
+        uses: astral-sh/ruff-action@v4.1.0
+        with:
+          args: "check --select E4,E7,E9,F,I scripts"
+
+      - name: Lint Markdown
+        uses: DavidAnson/markdownlint-cli2-action@v24.2.0
+        with:
+          globs: |
+            **/*.md
+            #output
