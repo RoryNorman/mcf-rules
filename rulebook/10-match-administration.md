@@ -25,7 +25,7 @@ The Match Director is equal to the RM in authority, but handles the administrati
 
 If the competitor disagrees with something other than a scoring call, they supply $100 dollars to the MD, and present their case to a committee of 3 shooters pulled from a separate, uninvolved squad. If the competitor loses arbitration, the 100 dollars is forfeit to the match. If they win, the fee is returned and a scoring modification/reshoot granted as needed. 
 
-## 10.3 Competitor Responsibilities
+## 10.6 Competitor Responsibilities
 
 Competitors must:
 
@@ -35,9 +35,8 @@ Competitors must:
 - Treat staff and other competitors with respect.
 - Assist with stage reset and match flow.
 
-## 10.4 Consistency and Equity
+## 10.7 Consistency and Equity
 
 Stage briefings, scoring standards, and procedural requirements should be applied consistently to every competitor. When an unexpected condition affects a competitor, match officials should determine whether the condition also affected safety, scoring, or the intended shooting challenge before deciding how to proceed.
 
 Any correction should be explained to the affected competitor and communicated to match staff who may encounter the same condition.
-
