@@ -41,3 +41,7 @@ If the Range Officer identifies a construction problem, safety violation, or oth
 ### 4.2.2 Finger
 
 If the Range Officer identifies a potential finger in the trigger guard, they may elect to issue a warning, particularly in the case of a newer competitor. This is an optional courtesy given at the RO's best judgment, and egregious infractions may go directly to a stage DQ outlined in [Section 9.2](09-dq.md#92-stage-disqualifications). Repeated violations will also escalate to a stage DQ. Receipt of this warning command is not a requirement before incurring a stage DQ.
+
+### 4.2.3 Coaching
+
+If a newer competitor requests coaching, the RO may issue additional commands to assist them through the stage.
