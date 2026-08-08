@@ -35,3 +35,33 @@ jobs:
           path: output/html/**
           if-no-files-found: error
           retention-days: 90
+
+      - name: Check out website repository
+        uses: actions/checkout@v4
+        with:
+          repository: RoryNorman/mcf
+          ref: main
+          path: destination
+          ssh-key: ${{ secrets.WORDPRESS_REPO_SSH_KEY }}
+
+      - name: Copy WordPress rulebook
+        run: |
+          mkdir -p destination/content
+          cp output/html/mcf-rulebook-wordpress.html \
+            destination/content/mcf-rulebook.html
+
+      - name: Commit and push website update
+        working-directory: destination
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- content/mcf-rulebook.html
+
+          if git diff --cached --quiet; then
+            echo "WordPress rulebook is already current."
+            exit 0
+          fi
+
+          git commit -m "Update MCF WordPress rulebook"
+          git push origin main
