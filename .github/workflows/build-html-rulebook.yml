@@ -46,9 +46,11 @@ jobs:
 
       - name: Copy WordPress rulebook
         run: |
-          mkdir -p destination/content
+          mkdir -p destination/content/assets
           cp output/html/mcf-rulebook-wordpress.html \
             destination/content/mcf-rulebook.html
+          cp output/html/assets/mcf-logo.png \
+            destination/content/assets/mcf-logo.png
 
       - name: Commit and push website update
         working-directory: destination
@@ -56,7 +58,9 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email \
             "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- content/mcf-rulebook.html
+          git add -- \
+            content/mcf-rulebook.html \
+            content/assets/mcf-logo.png
 
           if git diff --cached --quiet; then
             echo "WordPress rulebook is already current."

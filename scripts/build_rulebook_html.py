@@ -12,9 +12,6 @@ from pathlib import Path
 REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_OUTPUT_DIR = REPOSITORY_ROOT / "output" / "html"
 LOGO_SOURCE = REPOSITORY_ROOT / "assets" / "mcf-logo.png"
-WORDPRESS_LOGO_URL = (
-    "https://raw.githubusercontent.com/RoryNorman/mcf-rules/main/assets/mcf-logo.png"
-)
 SOURCE_FILES = (
     "rulebook/01-purpose.md",
     "rulebook/02-tenets.md",
@@ -206,7 +203,7 @@ def build(output_dir: Path) -> None:
         )
 
     standalone_article = make_article("assets/mcf-logo.png")
-    wordpress_article = make_article(WORDPRESS_LOGO_URL)
+    wordpress_article = make_article("assets/mcf-logo.png")
     fragment = f"<style>\n{CSS}\n</style>\n{wordpress_article}\n"
     document = "\n".join(
         (

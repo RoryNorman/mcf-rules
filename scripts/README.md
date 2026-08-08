@@ -19,8 +19,9 @@ python scripts/build_rulebook_html.py
 The **Build HTML rulebook** GitHub Action also runs whenever the rulebook changes.
 Download its `mcf-html-rulebook` artifact from the workflow run, unzip it, and
 paste the contents of `mcf-rulebook-wordpress.html` into a WordPress Custom HTML
-block. Its logo loads from the copy committed under `assets/` on GitHub. WordPress
-sites that remove `<style>` tags should place the CSS from that
+block. The fragment references `assets/mcf-logo.png`, so deployments should keep
+that asset relative to the HTML file. WordPress sites that remove `<style>` tags
+should place the CSS from that
 tag in **Appearance > Customize > Additional CSS**, then paste only the
 `<article class="mcf-rulebook">...</article>` portion into the block.
 
