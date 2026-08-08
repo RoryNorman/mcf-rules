@@ -5,7 +5,6 @@ on:
     branches: [main, master]
     paths:
       - "rulebook/**"
-      - "assets/mcf-logo.png"
       - "scripts/build_rulebook_html.py"
       - ".github/workflows/build-html-rulebook.yml"
   workflow_dispatch:
@@ -46,11 +45,11 @@ jobs:
 
       - name: Copy WordPress rulebook
         run: |
-          mkdir -p destination/content/assets
+          mkdir -p destination/content
           cp output/html/mcf-rulebook-wordpress.html \
             destination/content/mcf-rulebook.html
-          cp output/html/assets/mcf-logo.png \
-            destination/content/assets/mcf-logo.png
+          rm -f destination/content/assets/mcf-logo.png
+          rmdir destination/content/assets 2>/dev/null || true
 
       - name: Commit and push website update
         working-directory: destination
@@ -58,9 +57,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email \
             "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- \
-            content/mcf-rulebook.html \
-            content/assets/mcf-logo.png
+          git add --all -- content
 
           if git diff --cached --quiet; then
             echo "WordPress rulebook is already current."

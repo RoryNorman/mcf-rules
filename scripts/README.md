@@ -8,7 +8,6 @@ only the Python standard library:
 - `output/html/mcf-rulebook.html` is a complete, standalone web page.
 - `output/html/mcf-rulebook-wordpress.html` is a styled fragment for a WordPress
   Custom HTML block.
-- `output/html/assets/mcf-logo.png` is the local logo used by the standalone page.
 
 Run it locally with:
 
@@ -19,9 +18,7 @@ python scripts/build_rulebook_html.py
 The **Build HTML rulebook** GitHub Action also runs whenever the rulebook changes.
 Download its `mcf-html-rulebook` artifact from the workflow run, unzip it, and
 paste the contents of `mcf-rulebook-wordpress.html` into a WordPress Custom HTML
-block. The fragment references `assets/mcf-logo.png`, so deployments should keep
-that asset relative to the HTML file. WordPress sites that remove `<style>` tags
-should place the CSS from that
+block. WordPress sites that remove `<style>` tags should place the CSS from that
 tag in **Appearance > Customize > Additional CSS**, then paste only the
 `<article class="mcf-rulebook">...</article>` portion into the block.
 

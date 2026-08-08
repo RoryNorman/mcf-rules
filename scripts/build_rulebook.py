@@ -403,10 +403,10 @@ def build_pdf(output_path: Path) -> None:
     output_path.parent.mkdir(parents=True, exist_ok=True)
     styles = make_styles()
     logo_width, logo_height = ImageReader(LOGO_SOURCE).getSize()
-    rendered_logo_width = 6.4 * inch
+    rendered_logo_width = 4.8 * inch
     rendered_logo_height = rendered_logo_width * logo_height / logo_width
     story: list[object] = [
-        Spacer(1, 0.85 * inch),
+        Spacer(1, 1.15 * inch),
         Image(
             str(LOGO_SOURCE),
             width=rendered_logo_width,
