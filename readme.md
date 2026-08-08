@@ -24,11 +24,3 @@ reward speed and accuracy without unnecessary theatrics.
 | 9 | [Disqualifications](rulebook/09-dq.md) |
 | 10 | [Match Administration](rulebook/10-admin.md) |
 | Appendix | [Glossary and Examples](rulebook/appendix.md) |
-
-## Published Formats
-
-- [PDF rulebook](output/pdf/mcf-rulebook.pdf) — ready to download or print.
-- [Standalone HTML rulebook](output/html/mcf-rulebook.html) — ready to open in
-  a browser or publish as a page.
-- [WordPress HTML](output/html/mcf-rulebook-wordpress.html) — ready to paste into
-  a WordPress Custom HTML block.
