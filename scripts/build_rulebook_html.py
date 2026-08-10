@@ -24,7 +24,7 @@ SOURCE_FILES = (
     "rulebook/appendix.md",
 )
 
-CSS = """.mcf-rulebook{--mcf-ink:#20252b;--mcf-muted:#5a6068;--mcf-line:#d8dde2;--mcf-accent:#f05223;box-sizing:border-box;max-width:900px;margin:0 auto;color:var(--mcf-ink);font:17px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.mcf-rulebook *{box-sizing:border-box}.mcf-rulebook header{text-align:center;padding:2rem 1rem;border-bottom:3px solid var(--mcf-accent)}.mcf-rulebook header h1{margin:0;font-size:clamp(2rem,6vw,3.4rem);line-height:1.1}.mcf-rulebook nav{margin:2rem 0;padding:1.25rem 1.5rem;background:#f5f6f7;border:1px solid var(--mcf-line);border-radius:8px}.mcf-rulebook nav h2{margin-top:0}.mcf-rulebook nav ol{columns:2;column-gap:2rem;margin-bottom:0}.mcf-rulebook nav li{break-inside:avoid;margin:.25rem 0}.mcf-rulebook a{color:var(--mcf-accent);text-decoration-thickness:1px;text-underline-offset:2px}.mcf-rulebook section{scroll-margin-top:2rem}.mcf-rulebook section>h2{margin-top:3.25rem;padding-bottom:.4rem;border-bottom:2px solid var(--mcf-line);font-size:2rem;line-height:1.2}.mcf-rulebook h3{margin-top:2rem;font-size:1.4rem;line-height:1.3}.mcf-rulebook h4{margin:1.5rem 0 0 1rem;padding-left:.75rem;border-left:3px solid var(--mcf-line);font-size:1.12rem}.mcf-rulebook blockquote{margin:1.5rem 0;padding:.75rem 1.25rem;border-left:4px solid var(--mcf-accent);background:#f8f8f8;color:var(--mcf-muted)}.mcf-rulebook table{width:100%;margin:1.5rem 0;border-collapse:collapse}.mcf-rulebook th,.mcf-rulebook td{padding:.65rem .8rem;border:1px solid var(--mcf-line);text-align:left}.mcf-rulebook th{background:#eef0f2}.mcf-rulebook ul{padding-left:1.4rem}.mcf-rulebook footer{margin-top:4rem;padding:1.5rem 0;border-top:1px solid var(--mcf-line);color:var(--mcf-muted);font-size:.9rem}@media(max-width:650px){.mcf-rulebook{font-size:16px}.mcf-rulebook nav ol{columns:1}.mcf-rulebook section>h2{font-size:1.65rem}}@media print{.mcf-rulebook nav{break-after:page}.mcf-rulebook section>h2{break-before:page}.mcf-rulebook a{color:inherit;text-decoration:none}}"""
+CSS = """.mcf-rulebook{--mcf-ink:#20252b;--mcf-muted:#5a6068;--mcf-line:#d8dde2;--mcf-accent:#f05223;box-sizing:border-box;max-width:900px;margin:0 auto;color:var(--mcf-ink);font:17px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.mcf-rulebook *{box-sizing:border-box}.mcf-rulebook header{text-align:center;padding:2rem 1rem;border-bottom:3px solid var(--mcf-accent)}.mcf-rulebook header h1{margin:0;font-size:clamp(2rem,6vw,3.4rem);line-height:1.1}.mcf-rulebook nav{margin:2rem 0;padding:1.25rem 1.5rem;background:#f5f6f7;border:1px solid var(--mcf-line);border-radius:8px}.mcf-rulebook nav h2{margin-top:0}.mcf-rulebook nav ul{columns:2;column-gap:2rem;margin-bottom:0;padding-left:0;list-style:none}.mcf-rulebook nav li{break-inside:avoid;margin:.25rem 0}.mcf-rulebook a{color:var(--mcf-accent);text-decoration-thickness:1px;text-underline-offset:2px}.mcf-rulebook section{scroll-margin-top:2rem}.mcf-rulebook section>h2{margin-top:3.25rem;padding-bottom:.4rem;border-bottom:2px solid var(--mcf-line);font-size:2rem;line-height:1.2}.mcf-rulebook h3{margin-top:2rem;font-size:1.4rem;line-height:1.3}.mcf-rulebook h4{margin:1.5rem 0 0 1rem;padding-left:.75rem;border-left:3px solid var(--mcf-line);font-size:1.12rem}.mcf-rulebook blockquote{margin:1.5rem 0;padding:.75rem 1.25rem;border-left:4px solid var(--mcf-accent);background:#f8f8f8;color:var(--mcf-muted)}.mcf-rulebook table{width:100%;margin:1.5rem 0;border-collapse:collapse}.mcf-rulebook th,.mcf-rulebook td{padding:.65rem .8rem;border:1px solid var(--mcf-line);text-align:left}.mcf-rulebook th{background:#eef0f2}.mcf-rulebook ul{padding-left:1.4rem}.mcf-rulebook footer{margin-top:4rem;padding:1.5rem 0;border-top:1px solid var(--mcf-line);color:var(--mcf-muted);font-size:.9rem}@media(max-width:650px){.mcf-rulebook{font-size:16px}.mcf-rulebook nav ul{columns:1}.mcf-rulebook section>h2{font-size:1.65rem}}@media print{.mcf-rulebook nav{break-after:page}.mcf-rulebook section>h2{break-before:page}.mcf-rulebook a{color:inherit;text-decoration:none}}"""
 
 
 def slugify(value: str) -> str:
@@ -173,12 +173,12 @@ def build(output_dir: Path) -> None:
         )
 
     navigation = (
-        '<nav aria-label="Rulebook contents"><h2>Contents</h2><ol>'
+        '<nav aria-label="Rulebook contents"><h2>Contents</h2><ul>'
         + "".join(
             f'<li><a href="#{anchor}">{html.escape(title)}</a></li>'
             for title, anchor in toc
         )
-        + "</ol></nav>"
+        + "</ul></nav>"
     )
 
     article = "\n".join(
