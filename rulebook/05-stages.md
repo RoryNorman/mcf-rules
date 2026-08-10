@@ -38,7 +38,7 @@ No more than one stage per match may require a fixed target-engagement order or 
 
 ### 5.1.6 Activated Targets
 
-Activated targets must operate repeatably and consistently. Competitors may not set up or practice activated targets during the course of fire. Match staff may provide one or two brief demonstrations at the beginning of the squad walkthrough.
+Activated targets must operate repeatably and consistently. Competitors may not set up or practice activated targets beyond the initial walkthrough. Match staff may provide one or two brief demonstrations at the beginning of the squad walkthrough.
 
 ### 5.1.7 Construction Failures
 
