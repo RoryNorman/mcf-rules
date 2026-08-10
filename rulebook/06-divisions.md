@@ -2,7 +2,9 @@
 
 Divisions group competitors by firearm capacity rather than by individual firearm features. A competitor's division determines the maximum ammunition capacity permitted in each magazine or cylinder and at the start of a course of fire.
 
-Capacity limits are maximums, not required loading levels. A competitor may load fewer rounds than the division permits, however, a competitors may not download a magazine to fit the Small Capacity division. The firearm loading devices need to have come from the factory as 8 rounds or less.
+Capacity limits are maximums, not required loading levels. A competitor may elect to load fewer rounds than the division permits, however, a competitor may not download a magazine to fit the Small Capacity division. The firearm loading devices for Small Capacity need to have come from the factory as 8 rounds or less.
+
+Minimum caliber for all divisions is 380 ACP. Individual match exceptions for lesser calibers may be given, if there is no risk for activated target failures.
 
 ## 6.1 Modern Capacity
 
