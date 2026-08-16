@@ -36,4 +36,13 @@ Examples:
 
 ## 8.4 Penalties
 
-Each occurrence of a penalty—including violating the written stage briefing, firing a shot while outside the shooting area, recording a miss, or hitting a no-shoot target—deducts 10 points. When a violation involves multiple shots or hits, the penalty applies separately to each applicable shot or hit.
+Each occurrence of a penalty deducts 10 points. When a penalty involves multiple shots during/after the violation, such as shots taken outside the shooting area, failing a mandatory reload, etc., the penalty is incurred for every shot. Penalties can be compounded, e.g. a failure to shoot at a target will also incur the miss penalties on that target.
+
+Types of penalties:
+
+- Having less than the required hits on a target
+- Hitting a no-shoot target
+- Forgetting to engage a target (shots must be fired towards the target in an attempt to hit it)
+- Missing mandatory reload
+- Failure to follow stage briefing
+- Firing outside the shooting area
